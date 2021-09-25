@@ -1,0 +1,166 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <title>Test Form</title>
+
+    <!-- Bootstrap core CSS -->
+
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/4.5/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/4.5/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/4.5/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/4.5/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/4.5/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+<link rel="icon" href="/docs/4.5/assets/img/favicons/favicon.ico">
+<meta name="msapplication-config" content="/docs/4.5/assets/img/favicons/browserconfig.xml">
+<meta name="theme-color" content="#563d7c">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown01">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+      <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+<main role="main" class="container mt-4">
+    <h3>Filter Form </h3>
+
+
+<form action='.' method='GET'> <!-- Form -->
+  <div class='form-row'> 
+    <div class='form-group col-12'>
+      <div class='input-group'>
+        <input class='form-control py-2 border-right-0 border' type='search' placeholder="Title contains ..." name='title contains'>
+        <div class="input-group-append">
+          <span class="input-group-text bg-transparent" id=""><i class='fa fa-search'></i></span>
+        </div>
+      </div>
+    </div>
+    <div class='form-group col-12'>
+      <div class='input-group'>
+        <input class='form-control py-2 border-right-0 border' type='search' placeholder="id exact ..." name='id exact'>
+        <div class="input-group-append">
+          <span class="input-group-text bg-transparent" id=""><i class='fa fa-search'></i></span>
+        </div>
+      </div>
+    </div>
+    <div class='form-group col-12'>
+      <div class='input-group'>
+        <input class='form-control py-2 border-right-0 border' type='search' placeholder="Author or Category ..." name='author or category'>
+        <div class="input-group-append">
+          <span class="input-group-text bg-transparent" id=""><i class='fa fa-search'></i></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-2 col-lg">
+      <label for="inputEmail4">Minimum View Count </label>
+      <input type="number" min=0 class="form-control" id="inputEmail4" placeholder="Min Count" name='min count'>
+    </div>
+    <div class="form-group col-md-2 col-lg">
+      <label for="inputPassword4">Maximum View Count </label>
+      <input type="number" min=0 class="form-control" id="inputPassword4" placeholder="Max Count" name='max count'>
+    </div>
+    <div class="form-group col-md-2 col-lg">
+      <label for="inputEmail4">Publih Date Minimum </label>
+      <input type="date" class="form-control" id="inputEmail4" name='publish date min'>
+    </div>
+    <div class="form-group col-md-2 col-lg">
+      <label for="inputPassword4">Publih Date Maximum </label>
+      <input type="date" class="form-control" id="inputPassword4" name='publish date max'>
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputState">Category</label>
+      <select id="inputState" class="form-control" name='Categories'>
+        {% for cat in cats %}
+        <option>{{cat}}</option>
+        {% endfor %}
+      </select>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck" name='reviewed'>
+      <label class="form-check-label" for="gridCheck">
+        Reviewed
+      </label>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Search</button>
+</form>
+<div class='mt-3'>
+  <ul>
+    {% for i in qs1 %}
+      <li>
+        {{i.title}}  Author:{{i.author.name}} views:{{i.views}} publish:{{i.publish_date}}
+        {% for cat in i.category.all %}
+          {{cat}}
+        {% endfor %}
+        Reviewed:{{i.reviewed}}
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+
+
+</main><!-- /.container -->
+<!-- jQuery and JS bundle w/ Popper.js -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+</html>
